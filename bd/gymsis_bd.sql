@@ -1,9 +1,9 @@
-create database gymsis;
-
+create  database gymsis;
 use gymsis;
 
 CREATE TABLE `Usuario` (
 	`IdUsuario` INT NOT NULL AUTO_INCREMENT,
+	`Nombre` varchar(50) NOT NULL,
 	`Apellidos` varchar(50) NOT NULL,
 	`Documento` INT NOT NULL,
 	`CorreoElectronico` varchar(50) NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE `Pagos` (
 CREATE TABLE `Rol` (
 	`IdRol` INT NOT NULL AUTO_INCREMENT,
 	`RolNombre` varchar(50) NOT NULL,
-	`IdUsuario` DECIMAL NOT NULL,
+	`IdUsuario` int NOT NULL,
 	PRIMARY KEY (`IdRol`)
 );
 
@@ -66,10 +66,3 @@ ALTER TABLE `Plan` ADD CONSTRAINT `Plan_fk0` FOREIGN KEY (`IdUsuario`) REFERENCE
 ALTER TABLE `Cita` ADD CONSTRAINT `Cita_fk0` FOREIGN KEY (`IdUsuario`) REFERENCES `Usuario`(`IdUsuario`);
 
 ALTER TABLE `Cita` ADD CONSTRAINT `Cita_fk1` FOREIGN KEY (`IdEspecialista`) REFERENCES `Especialista`(`IdEspecialista`);
-
-
-
-
-
-
-
