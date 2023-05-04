@@ -275,7 +275,8 @@ footer {
     color: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 1rem;
 }
 
 .container__info {
