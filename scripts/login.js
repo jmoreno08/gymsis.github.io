@@ -9,7 +9,7 @@ botonLogin.addEventListener("click",function(){
     
         }else{
             contador += 1;
-            alertify.alert('Iniciar Sesión','¡Usuario o contraseña incorrectos!', function(){ alertify.error('# intentos erroneos: ' + contador); });
+            alertify.alert('Iniciar Sesión','¡Usuario o contraseña incorrectos!', function(){ alertify.error('# intentos de erroneos: ' + contador); });
     
         }
     }else{
