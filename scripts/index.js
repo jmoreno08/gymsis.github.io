@@ -16,12 +16,13 @@ botonRegistrarse.addEventListener("click", function(){
 })
 
 botonIniciarSesion.addEventListener("click",function(){
-    if(contador >=3){
-
-        alertify.alert('Inicio Sesión', '¡Usted supero el limite de intentos de iniciar sesión!', function(){ alertify.error('# intentos erroneos' + contador); });
     
+    if(contador >=3){
+        
+        alertify.alert('Inicio Sesión', '¡Usted supero el limite de intentos de iniciar sesión!', function(){ alertify.error('# intentos erroneos' + contador); });
        }else{
-
+           
         window.open("login.html")
+           
        }
 })
