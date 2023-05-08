@@ -306,34 +306,6 @@ footer {
     width: 50%;
 }
 
-#fondo .container{
-    padding-top: 20%;
-    padding-bottom: 10%;
-    text-align: center;
-
-}
-
-
-#fondo{
-    
-    background-image: url(imags/fondo-login.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-#fondo input{
-    font-size: 1em;
-}
-
-#formularioLogin{
-    padding-top: 0%;
-
-}
-
-
-
-
 
 
 @media (min-width: 720px) {
