@@ -1,4 +1,6 @@
-let contador = JSON.parse(localStorage.getItem('contador'));
+
+
+let contador = 0;
 
 botonRegistrarse.addEventListener("click", function(){
 
@@ -7,22 +9,20 @@ botonRegistrarse.addEventListener("click", function(){
 
          alertify.alert('Registro de usuarios','¡Usuario registado correctamente!' + 
         'Se envio correo de confirmacion a: ' + document.getElementById("campoCorreo").value , function(){ alertify.success('¡Usuario registado correctamente!'); });
-
     }else{
-
         alertify.alert('Registro de usuarios', '¡Se detectaron campos vacios!', function(){ alertify.error('¡Registro cancelado!'); });
     }
-    
 })
 
-botonIniciarSesion.addEventListener("click",function(){
-    
-    if(contador >=3){
-        
-        alertify.alert('Inicio Sesión', '¡Usted supero el limite de intentos de iniciar sesión!', function(){ alertify.error('# de intentos erroneos: ' + contador); });
-       }else{
-           
-        window.open("login.html")
-           
-       }
+botonLogin.addEventListener("click",function(){
+    if(contador <= 2){
+        if(document.getElementById("campoId").value !== "" &&
+        document.getElementById("campoContraseña").value !== ""){
+        }else{
+            contador += 1;
+            alertify.alert('Iniciar Sesión','¡Usuario o contraseña incorrectos!', function(){ alertify.error('# Intentos erroneos: ' + contador); });
+        }
+    }else{
+        alertify.alert('¡Error!','Usted supero el limite de intentos al iniciar sesión', function(){ alertify.error('# Intentos erroneos: ' + contador); });
+    }
 })
