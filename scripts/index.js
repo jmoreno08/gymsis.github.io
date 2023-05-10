@@ -2,9 +2,8 @@
 
 let contador = 0;
 
-botonRegistrarse.addEventListener("click", function(){
 
-   
+botonRegistrarse.addEventListener("click", function(){   
     
     if( document.getElementById("campoNombre").value !== "" && document.getElementById("campoApellido").value && document.getElementById("campoIdentificacion").value !== ""
         && document.getElementById("campoCorreo").value !== "" && document.getElementById("campoCelular").value !== "" && document.getElementById("campoContraseña").value !== ""){
@@ -23,8 +22,9 @@ botonRegistrarse.addEventListener("click", function(){
 
 
 botonLogin.addEventListener("click",function(){
-
+ 
     if(contador <= 2){
+        console.log(contador)
         if(document.getElementById("campoId").value !== "" &&
         document.getElementById("campoContraseña").value !== ""){
         }else{
@@ -32,10 +32,20 @@ botonLogin.addEventListener("click",function(){
             alertify.alert('Iniciar Sesión','¡Usuario o contraseña incorrectos!', function(){ alertify.error('# Intentos erroneos: ' + contador); });
         }
     }else{
+        contador=0;
         alertify.alert('¡Error!','Usted supero el limite de intentos al iniciar sesión. ¡Recargue la pagina!', function(){ alertify.error('# Intentos erroneos: ' + contador); });
     }
     
 })
 
+botonEnviar.addEventListener("click", function(){
 
+    
+    if( document.getElementById("campoNombre").value !== "" && document.getElementById("campoApellido").value &&  document.getElementById("campoCorreo").value !== "" && document.getElementById("campoCelular").value !== "" && document.getElementById("campoComenario").value !== ""){
 
+         alertify.alert('Contactanos','¡Envio de solicitud correctamente!', function(){ alertify.success('¡Envio de solicitud correctamente!'); });
+
+    }else{
+        alertify.alert('Contactanos', '¡Se detectaron campos vacios!', function(){ alertify.error('¡Envio Cancelado!'); });
+    }
+})
