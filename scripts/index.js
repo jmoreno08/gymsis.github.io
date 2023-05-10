@@ -19,15 +19,25 @@ botonRegistrarse.addEventListener("click", function(){
 
 })
 
-
-
 botonLogin.addEventListener("click",function(){
- 
+
     if(contador <= 2){
-        console.log(contador)
-        if(document.getElementById("campoId").value !== "" &&
-        document.getElementById("campoContraseña").value !== ""){
-        }else{
+
+        let user=document.getElementById("campoId").value
+        let password=document.getElementById("password").value
+
+        console.log(user + password)
+        if(user === "admin" &&
+         password === "admin")
+
+         window.location = "/admin_in.html"
+         
+        else if (user === "user" &&
+        password === "user")
+
+        window.location = "/user_in.html"
+
+        else{
             contador += 1;
             alertify.alert('Iniciar Sesión','¡Usuario o contraseña incorrectos!', function(){ alertify.error('# Intentos erroneos: ' + contador); });
         }
@@ -40,6 +50,7 @@ botonLogin.addEventListener("click",function(){
 
 botonEnviar.addEventListener("click", function(){
 
+    console.log("prueba")
     
     if( document.getElementById("campoNombre").value !== "" && document.getElementById("campoApellido").value &&  document.getElementById("campoCorreo").value !== "" && document.getElementById("campoCelular").value !== "" && document.getElementById("campoComenario").value !== ""){
 
