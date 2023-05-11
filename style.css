@@ -400,12 +400,13 @@ footer p {
   }
 
   #plan .planes-gym {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
   }
 
   #plan p {
-    display: block;
+    display: flex;
     margin-bottom: 30px;
   }
 
