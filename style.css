@@ -407,7 +407,7 @@ footer p {
 
   #plan .planes-gym {
     display: flex;
-    grid-gap: 20px;
+    justify-content: center;
   }
 
   #plan p {
