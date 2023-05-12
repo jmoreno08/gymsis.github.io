@@ -454,3 +454,103 @@ footer p {
     border-radius: 15%;
   }
 }
+
+.container__logueado {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.items__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+}
+
+.item__logueado {
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: .6rem;
+    box-shadow: 3px 7px 5px 0px rgb(187, 187, 187);
+}
+
+    .item__logueado > p {
+        background-color: #ffffff6b;
+        color: #000000;
+        border-radius: 1rem;
+    }
+
+        .item__logueado > p:hover {
+            font-size: 1.5rem;
+        }
+
+.item__1 {
+    background-image: url('plan.jpg');
+    background-size: cover;
+}
+
+.item__2 {
+    background-image: url('Rutinas.jpg');
+    background-size: cover;
+}
+
+.item__3 {
+    background-image: url('Saludable.jpg');
+    background-size: cover;
+}
+
+
+.item__4 {
+    background-image: url('Profesional.jpg');
+    background-size: cover;
+}
+
+.item__5 {
+    background-image: url('Sedes.jpg');
+    background-size: cover;
+}
+
+.item__6 {
+    background-image: url('clases.jpg');
+    background-size: cover;
+}
+
+
+@media (max-width: 900px) {
+
+    .container__logueado {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .items__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 80%;
+    }
+
+    .item__logueado {
+        width: 90%;
+        height: 10vh;
+    }
+}
