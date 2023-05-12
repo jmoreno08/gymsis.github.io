@@ -498,33 +498,33 @@ footer p {
         }
 
 .item__1 {
-    background-image: url('imags/plan.jpg');
+    background-image: url('/imags/plan.jpg');
     background-size: cover;
 }
 
 .item__2 {
-    background-image: url('imags/Rutinas.jpg');
+    background-image: url('/imags/Rutinas.jpg');
     background-size: cover;
 }
 
 .item__3 {
-    background-image: url('imags/Saludable.jpg');
+    background-image: url('/imags/Saludable.jpg');
     background-size: cover;
 }
 
 
 .item__4 {
-    background-image: url('imags/Profesional.jpg');
+    background-image: url('/imags/Profesional.jpg');
     background-size: cover;
 }
 
 .item__5 {
-    background-image: url('imags/Sedes.jpg');
+    background-image: url('/imags/Sedes.jpg');
     background-size: cover;
 }
 
 .item__6 {
-    background-image: url('imags/clases.jpg');
+    background-image: url('/imags/clases.jpg');
     background-size: cover;
 }
 
