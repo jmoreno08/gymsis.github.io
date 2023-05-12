@@ -1,6 +1,5 @@
 botonEnviar.addEventListener("click", function(){
 
-    console.log("prueba")
     
     if( document.getElementById("campoNombre").value !== "" && document.getElementById("campoApellido").value &&  document.getElementById("campoCorreo").value !== "" && document.getElementById("campoCelular").value !== "" && document.getElementById("campoComenario").value !== ""){
 

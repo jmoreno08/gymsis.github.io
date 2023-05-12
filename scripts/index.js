@@ -14,8 +14,7 @@ botonRegistrarse.addEventListener("click", function(){
     }else{
 
         alertify.alert('Registro de usuarios', '¡Se detectaron campos vacios!', function(){ alertify.error('¡Registro cancelado!'); });
-    }
-    
+    }  
 
 })
 
