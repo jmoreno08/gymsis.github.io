@@ -14,17 +14,17 @@ h1 {
 }
 
 h2 {
-  font-size: 2.7em;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 2em;
 }
 
-p {
-  font-size: 1.25em;
-  padding: 30px 30px;
-}
 
 button {
   font-size: 1em;
@@ -36,13 +36,12 @@ button {
   color: white;
   background-color: rgb(149, 40, 40);
 }
-
+  
 button:hover {
   background-color: rgb(212, 15, 15);
 }
 
 .container-1 {
-    max-width: 1400px;
     margin: auto;
 }
 
@@ -142,43 +141,51 @@ header a:hover {
   padding: 100px 12px;
 }
 
-#plan {
-  background-color: rgb(210, 111, 116);
-  color: white;
-  text-align: center;
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
 
-#plan .container-1 {
-  padding: 30px 0px;
+.panel {
+  border: 1px solid #a52a2a; 
+  border-radius:0 !important;
+  transition: box-shadow 0.5s;
 }
-
-#plan p {
-  display: none;
+.panel:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
-
-#plan .cart-plan {
-  background-position: center center;
-  background-size: cover;
-  padding: 50px;
-  margin: 20px;
+.panel-footer .btn:hover {
+  border: 1px solid #a52a2a;
+  background-color: #fff !important;
+  color: #a52a2a;
 }
-
-.cart-plan:first-child {  
-  width: 300px;
-  height: 300px;
-  background-image: url('/imags/mensual.jpeg');
+.panel-heading {
+  color: #fff !important;
+  background-color: #a52a2a !important;
+  padding: 25px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
-
-.cart-plan:nth-child(2) {
-  width: 300px;
-  height: 300px;
-  background-image: url('/imags/trimestral.jpeg');
+.panel-footer {
+  background-color: white !important;
 }
-
-.cart-plan:nth-child(3) {
-  width: 300px;
-  height: 300px;
-  background-image: url('/imags/anual.jpeg');
+.panel-footer h3 {
+  font-size: 32px;
+}
+.panel-footer h4 {
+  color: #aaa;
+  font-size: 14px;
+}
+.panel-footer .btn {
+  margin: 15px 0;
+  background-color: #a52a2a;
+  color: #fff;
 }
 
 #sedes {
@@ -356,20 +363,6 @@ header a:hover {
     background-position: center center;
     height: 500px;
     width: 500px;
-  }
-
-  #plan .planes-gym {
-    display: flex;
-    justify-content: center;
-  }
-
-  #plan p {
-    display: flex;
-    margin-bottom: 30px;
-  }
-
-  #plan .cart-plan {
-    padding: 10px;
   }
 
   #sedes .sedes-gym {
