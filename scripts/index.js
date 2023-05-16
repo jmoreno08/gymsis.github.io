@@ -25,7 +25,6 @@ botonLogin.addEventListener("click",function(){
         let user=document.getElementById("campoId").value
         let password=document.getElementById("password").value
 
-        console.log(user + password)
         if(user === "admin" &&
          password === "admin")
 
@@ -41,7 +40,7 @@ botonLogin.addEventListener("click",function(){
             alertify.alert('Iniciar Sesión','¡Usuario o contraseña incorrectos!', function(){ alertify.error('# Intentos erroneos: ' + contador); });
         }
     }else{
-        contador=0;
+        
         alertify.alert('¡Error!','Usted supero el limite de intentos al iniciar sesión. ¡Recargue la pagina!', function(){ alertify.error('# Intentos erroneos: ' + contador); });
     }
     
