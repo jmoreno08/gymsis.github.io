@@ -294,7 +294,7 @@ padding-left: 10%;
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid white;
-  padding-bottom: 60px;
+  padding: 30px 30px;
 }
 
 .footer_inputs {
