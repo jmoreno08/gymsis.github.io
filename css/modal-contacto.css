@@ -33,7 +33,6 @@
     -webkit-transition: all 500ms ease-in;
     -moz-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
-     
 }
 
 .modal-header {
@@ -103,25 +102,14 @@ body {
 }
 
 .signupFrm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 40px;
   }
-
-  .form {
-    background-color: white;
-    width: 400px;
-    border-radius: 8px;
-    padding: 20px 40px;
-    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-  }
-  
-
 
   .inputContainer {
     position: relative;
     height: 45px;
-    width: 90%;
+    width: 100%;
     margin-bottom: 17px;
   }
 
@@ -164,14 +152,13 @@ body {
     text-decoration:none;
     display: grid;
     margin-left: auto;
-    padding: 15px 30px;
+    padding: 15px 10px;
     border: none;
     background-color: rgb(149, 40, 40);
     color: white;
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 30px;
   }
   
   .submitBtn:hover {
@@ -186,6 +173,10 @@ body {
     font-size: 14px;
     font-weight: 600;
     color: rgb(149, 40, 40);
+  }
+  h2{
+    text-align: center;
+    font: 200% sans-serif;
   }
 
   .input:focus {
