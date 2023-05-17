@@ -11,6 +11,8 @@
     />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/modal-contacto.css">
+
     <title>Gymsis</title>
   </head>
 
@@ -30,7 +32,7 @@
             <a href="/quienes-somos.html" class="nav_links">¿Quienes Somos?</a>
           </li>
           <li class="nav_item">
-            <a href="#" class="nav_links">Contactanos</a>
+            <a href="#modal-contacto" class="nav_links">Contactanos</a>
           </li>
           <li class="nav_item">
             <a href="#" class="nav_links">Registrarse</a>
@@ -221,6 +223,49 @@
           </figure>
         </div>
       </section>
+      <div id="modal-contacto" class="modal-contacto">
+        <div class="modalbox movedown">
+            <a href="" title="Close" class="close">X</a>
+            <div class="modal-header">
+              <h2>Contactanos</h2>
+            </div>       
+            <div class="modal-body">
+              <div class="signupFrm">
+                <form action="" class="form">
+                   
+                  <div class="inputContainer">
+                    <input type="text" class="input" placeholder="a">
+                    <label for="" class="label">Nombre</label>
+                  </div>
+    
+                  <div class="inputContainer">
+                    <input type="text" class="input" placeholder="a">
+                    <label for="" class="label">Apellido</label>
+                  </div>
+            
+                  <div class="inputContainer">
+                    <input type="text" class="input" placeholder="a">
+                    <label for="" class="label">Telefono</label>
+                  </div>
+    
+                  <div class="inputContainer">
+                    <input type="text" class="input" placeholder="a">
+                    <label for="" class="label">Correo Electronico</label>
+                  </div>
+            
+                  <div class="inputContainer">
+                    
+                    <input type="text" class="input" placeholder="a">
+                    <label for="" class="label">Mensaje</label>
+                    
+                  </div> 
+                  <a href="" title="Close" class="submitBtn">Enviar</a>
+                </form>
+              </div>
+            </div>      
+        </div>
+      </div>
+      
     </main>
 
     <footer class="footer">
@@ -251,8 +296,19 @@
         </div>
         <h3 class="footer_copyrigth">&copy; Terminos Legales Gymsis</h3>
       </section>
+
+      <div id="modal-contacto" class="modal-contacto">
+        <div class="modalbox movedown">
+            <a href="" title="Close" class="close">X</a>
+            <div class="modal-header">
+              <h2>Contactanos</h2>
+            </div>           
+        </div>
+      </div>
+
     </footer>
     <script src="/js/slider.js"></script>
     <script src="/js/menu.js"></script>
+    <script src="/js/modal-contacto.js"></script>
   </body>
 </html>
