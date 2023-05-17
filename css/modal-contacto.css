@@ -102,8 +102,9 @@ body {
 }
 
 .signupFrm {
+  
   background-color: rgb(255, 255, 255);
-  padding: 20px 40px;
+  padding: 40px 40px;
   }
 
   .inputContainer {
@@ -111,6 +112,7 @@ body {
     height: 45px;
     width: 100%;
     margin-bottom: 17px;
+        width: 100%;
   }
 
   .input {
@@ -152,7 +154,7 @@ body {
     text-decoration:none;
     display: grid;
     margin-left: auto;
-    padding: 15px 10px;
+    padding: 10px 10px;
     border: none;
     background-color: rgb(149, 40, 40);
     color: white;
@@ -189,4 +191,11 @@ body {
     z-index: 10;
     font-size: 14px;
     font-weight: 600;
+  }
+  .form-contacto {
+    background-color: white;
+    width: 300px;
+    border-radius: 8px;
+    padding: 20px 20px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
   }
