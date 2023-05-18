@@ -9,11 +9,14 @@
       href="/images/icono-gymsis.png"
       type="image/x-icon"
     />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/modal-contacto.css">  
+    <link rel="stylesheet" href="/css/modal-contacto.css">
+    <link rel="stylesheet" href="/css/modal-iniciarSesion.css">
+    
 
     <title>Gymsis</title>
   </head>
@@ -37,10 +40,10 @@
             <a href="#modal-contacto" class="nav_links">Contactanos</a>
           </li>
           <li class="nav_item">
-            <a href="#modal-registro" class="nav_links">Registrarse</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-registro" class="nav_links">Registrarse</a>
           </li>
           <li class="nav_item">
-            <a href="#" class="nav_links">Iniciar Sesión</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-iniciarSesion" class="nav_links">Iniciar Sesión</a>
           </li>
           <img src="/images/close.svg" alt="cerrar menu" class="nav_close" />
         </ul>
@@ -63,10 +66,16 @@
     <main>
       <section class="container benefits">
         <h2 class="subtitle">Beneficios</h2>
+        <p class="benefits_paragraph">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius dolorem
+          itaque sunt saepe modi! Inventore earum voluptatem voluptate maiores
+          iusto nihil hic magni aliquid tempore. Magnam ipsam amet repudiandae
+          dolor.
+        </p>
         <div class="benefits_main">
           <article class="benefits_icons">
             <img
-              src="/images/gym-1.svg"
+              src="/images/shapes.svg"
               alt="Beneficio 1"
               class="benefits_icon"
             />
@@ -80,7 +89,7 @@
           </article>
           <article class="benefits_icons">
             <img
-              src="/images/gym-2.svg"
+              src="/images/shapes.svg"
               alt="Beneficio 1"
               class="benefits_icon"
             />
@@ -94,7 +103,7 @@
           </article>
           <article class="benefits_icons">
             <img
-              src="/images/gym-3.svg"
+              src="/images/shapes.svg"
               alt="Beneficio 1"
               class="benefits_icon"
             />
@@ -219,7 +228,6 @@
           </figure>
         </div>
       </section>
-      
       <div id="modal-contacto" class="modal-contacto">
         <div class="modalbox movedown">
             <a href="" title="Close" class="close">X</a>
@@ -228,10 +236,10 @@
             </div>       
             <div class="modal-body">
               <div class="signupFrm">
-                <form action="" class="form-contacto">
+                <form action="" class="form">
                   
                   <div class="inputContainer">
-                    <input type="text" class="input" placeholder="a" required>
+                    <input type="text" class="input" placeholder="a">
                     <label for="" class="label">Nombre</label>
                   </div>
     
@@ -250,19 +258,20 @@
                     <label for="" class="label">Correo Electronico</label>
                   </div>
             
-                  <div class="inputContainer">                    
+                  <div class="inputContainer">
+                    
                     <input type="text" class="input" placeholder="a">
-                    <label for="" class="label">Mensaje</label>                    
+                    <label for="" class="label">Mensaje</label>
+                    
                   </div> 
                   <a href="" title="Close" class="submitBtn">Enviar</a>
-
-                  </form>
+                </form>
               </div>
             </div>      
         </div>
       </div>
-  
-        <div class="modal fade" id="modal-registro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+      <div class="modal fade" id="modal-registro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header" text-align="center">
@@ -335,7 +344,7 @@
           </div>
         </div>
       </div>    
-      
+
     </main>
 
     <footer class="footer">
@@ -371,8 +380,10 @@
     <script src="/js/slider.js"></script>
     <script src="/js/menu.js"></script>
     <script src="/js/modal-contacto.js"></script>
+    <script src="/js/modal-registro.js"></script>
     <script src="/js/index.js"></script>
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
   </body>
 </html>
