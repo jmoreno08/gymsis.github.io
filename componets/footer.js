@@ -29,6 +29,15 @@ class Footer extends HTMLElement {
         margin: 0;
         padding: 12px;
       }
+
+      .iconos__redes {
+        display:flex;
+        gap:2rem;
+      }
+
+      .item__icono {
+        cursor:pointer;
+      }
       
       .img__footer {
         width: 7rem;

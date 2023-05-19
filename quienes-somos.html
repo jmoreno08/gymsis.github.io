@@ -9,51 +9,70 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     <script src="componets/footer.js" type="text/javascript" defer></script>
     <title>¿Quienes Somos?</title>
-    <link rel="icon" type="image/jpg" href="imags/icono.png" />
+    <link rel="icon" type="image/jpg" href="images/icono.png" />
 </head>
 <body>
     <header>
-        <div class="container-1">
-            <a href="/index.html">
-                <img src="/imags/logo.png" alt="logo" class="logo" />
-            </a>
-            <nav>
-                <a href="/quienes-somos.html">¿Quienes Somos?</a>
-                <a href="" data-bs-toggle="modal" data-bs-target="#ModalContactanos" >Contactanos</a>
-          <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Registrarse</a>
-          <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar Sesión</a>
-            </nav>
-        </div>
-    </header>
+  
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style_somos.css" />
+    <link rel="stylesheet" href="/css/modal-contacto.css">
+    <link rel="stylesheet" href="/css/modal-registro.css">  
 
+    <nav class="nav">
+      <div class="nav_logo">
+        <a href="/index.html">
+          <img class="logo" src="/images/logo_4.png" alt="" srcset="">
+        </a>
+      </div>
+      <ul class="nav_link nav_link--menu">
+        <li class="nav_item">
+          <a href="/index.html" class="nav_links">Inicio</a>
+        </li>
+        <li class="nav_item">
+          <a href="/quienes-somos.html" class="nav_links">¿Quienes Somos?</a>
+        </li>
+        <li class="nav_item">
+          <a href="/#modal-contacto" class="nav_links">Contactanos</a>
+        </li>
+        <li class="nav_item">
+          <a href="/#modal-registro" class="nav_links">Registrarse</a>
+        </li>
+        <li class="nav_item">
+          <a href="#" class="nav_links">Iniciar Sesión</a>
+        </li>
+        <img src="/images/close.svg" alt="cerrar menu" class="nav_close" />
+      </ul>
+      <div class="nav_menu">
+        <img src="/images/menu.svg" alt="menu hamburguesa" class="nav_img" />
+      </div>
+    </header>
     <section class="banner__container-1">
         <p>¡Bienvenido!</p>
     </section>
 
-    <section class="container-1__info">
-        <div class="container-1__somos">
-            <div class="titulo__info">
-                <p> Quienes somos</p>
-            </div>
-            <div class="parrafo__info">
-                <p>En nuestro gimnasio, nos esforzamos por ofrecer un ambiente acogedor y motivador para ayudar a nuestros miembros a alcanzar sus objetivos de fitness. Nos enorgullece contar con un equipo de entrenadores altamente capacitados y amables, así como con una amplia variedad de equipos de última generación y programas de entrenamiento personalizado.</p>
-            </div>
-        </div>
-        <div class="container-1__mision">
-            <div class="titulo__info">
-                <p>Misión</p>
-            </div>
-            <div class="parrafo__info">
-                <p>Nuestra misión es hacer que el ejercicio sea accesible y divertido para todos, independientemente de su nivel de condición física. Ya sea que seas un principiante o un atleta experimentado, encontrarás lo que necesitas para alcanzar tus metas de fitness en nuestro gimnasio.</p>
-            </div>
-        </div>
+
+    <section class="container__mision">
+      <div class="item__mision">
+        <h3>Somos</h3>
+        <p class="parrafo">
+          Una comunidad que nos esforzamos por ofrecer un ambiente acogedor y motivador para ayudar a nuestros miembros a alcanzar sus objetivos de fitness. Nos enorgullece contar con un equipo de entrenadores altamente capacitados y amables, así como con una amplia variedad de equipos de última generación y programas de entrenamiento personalizado.
+        </p>
+      </div>
+      <div class="item__mision">
+        <h3>Misión</h3>
+        <p class="parrafo">
+          Una comunidad que nos esforzamos por ofrecer un ambiente acogedor y motivador para ayudar a nuestros miembros a alcanzar sus objetivos de fitness. Nos enorgullece contar con un equipo de entrenadores altamente capacitados y amables, así como con una amplia variedad de equipos de última generación y programas de entrenamiento personalizado.
+        </p>
+      </div>
     </section>
+
 
     <div class="modal fade" id="ModalContactanos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header" text-align="center">
-              <img src="/imags/logo.png">
+              <img src="/images/logo.png">
               <h5 class="modal-title" id="staticBackdropLabel"> <b>Formulario de Contacto</b></h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -97,7 +116,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header" text-align="center">
-              <img src="/imags/logo.png">
+              <img src="/images/logo.png">
               <h5 class="modal-title" id="staticBackdropLabel"> <b>Formulario de registro</b></h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
