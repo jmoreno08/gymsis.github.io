@@ -1,0 +1,21 @@
+table.routineTable {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #a75555;
+  border-style: solid;
+  color: #000000;
+}
+
+table.routineTable td, table.routineTable th {
+  border-width: 1px;
+  border-color: #282626;
+  border-style: solid;
+  padding: 3px;
+}
+
+table.routineTable thead {
+  background-color: #a75555;
+}
+

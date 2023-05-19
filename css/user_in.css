@@ -63,3 +63,20 @@ nav > a {
     border: 2px solid #952828;
     color: #ffffff;
 }
+
+#modal-routine{
+  width: 90%;
+  margin:auto;
+  top: 16px;
+}
+#routine_container{
+  padding: 0;
+}
+
+#actualice-card{
+  overflow: auto;
+  max-height: 20rem;
+}
+#planes_actualice{
+  padding-top: 0;
+}
