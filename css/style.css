@@ -96,10 +96,20 @@ padding-left: 10%;
 
 .hero_title {
   font-size: 3rem;
+  color: rgb(164, 42, 42);
+
 }
 
 .hero_paragraph {
   margin-bottom: 20px;
+  display: inline-block;
+  background-color: rgba(198, 195, 195, 0.375);
+  justify-self: center;
+  text-decoration: none;
+  padding: 13px 30px;
+  border-radius: 3px;
+  color: rgb(133, 36, 36);
+
 }
 
 .buttomregister {
@@ -201,7 +211,7 @@ padding-left: 10%;
 }
 
 .plan_price {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
 }
 
 .price_item {
@@ -209,7 +219,7 @@ padding-left: 10%;
   display: grid;
   gap: 1em;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 0,5rem;
   margin-bottom: 50px;
   color: white;
 }
