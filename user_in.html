@@ -27,7 +27,7 @@
       </a>
       <nav class="nav__items">
         <a href="/quienes-somos.html">¿Quienes Somos?</a>
-        <a href="" data-bs-toggle="modal" data-bs-target="#ModalContactanos">Contactanos</a>
+        <a href="#modal-contacto"  data-bs-target="#ModalContactanos">Contactanos</a>
         <a href="index.html">Cerrar Sesión</a>
       </nav>
     </div>
@@ -35,7 +35,7 @@
 
   <div class="container__logueado">
     <div class="items__container">
-      <a href="#modal-contacto" class="nav_links">
+      <a href="#modal-Actualizar" class="nav_links">
         <div class="item__logueado item__1">
           <p>Seleccionar plan</p>
         </div>
@@ -69,62 +69,8 @@
     </div>
   </div>
 
-  <div class="modal fade" id="ModalContactanos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header" text-align="center">
-          <img src="/imags/logo.png" />
-          <h5 class="modal-title" id="staticBackdropLabel">
-            <b>Formulario de Contacto</b>
-          </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
 
-        <div class="modal-body">
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Nombre completo:</span>
-            <input type="text" id="campoNombre" class="form-control" placeholder="Nombre completo"
-              aria-label="Nombre completo" aria-describedby="basic-addon1" />
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Apellidos:</span>
-            <input type="text" id="campoApellido" class="form-control" placeholder="Apellidos" aria-label="Apellidos"
-              aria-describedby="basic-addon1" />
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">E-mail:</span>
-            <input type="text" id="campoCorreo" class="form-control" placeholder="E-mail" aria-label="E-mail"
-              aria-describedby="basic-addon1" />
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1"># Celular:</span>
-            <input type="number" id="campoCelular" class="form-control" placeholder="# Celular" aria-label="# Celular"
-              aria-describedby="basic-addon1" />
-          </div>
-
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">Comentario:</span>
-            <input type="" id="campoComenario" class="form-control" placeholder="Comentario" aria-label="Comentario"
-              aria-describedby="basic-addon1" />
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Cerrar
-          </button>
-          <button type="button" class="btn btn-danger" id="botonEnviar">
-            Enviar
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="modal-contacto" class="modal-contacto" class="modal-actualice">
+  <div id="modal-Actualizar" class="modal-contacto" class="modal-actualice">
     <div class="modalbox movedown" id="modal-routine">
       <a href="" title="Close" class="close">X</a>
       <div class="modal-header">
@@ -221,6 +167,49 @@
           </section>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div id="modal-contacto" class="modal-contacto">
+    <div class="modalbox movedown">
+        <a href="" title="Close" class="close">X</a>
+        <div class="modal-header">
+          <h2>Contactanos</h2>
+        </div>       
+        <div class="modal-body">
+          <div class="signupFrm">
+            <form action="" class="form">
+              
+              <div class="inputContainer">
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Nombre</label>
+              </div>
+
+              <div class="inputContainer">
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Apellido</label>
+              </div>
+        
+              <div class="inputContainer">
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Telefono</label>
+              </div>
+
+              <div class="inputContainer">
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Correo Electronico</label>
+              </div>
+        
+              <div class="inputContainer">
+                
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Mensaje</label>
+                
+              </div> 
+              <a href="" title="Close" class="submitBtn">Enviar</a>
+            </form>
+          </div>
+        </div>      
     </div>
   </div>
 

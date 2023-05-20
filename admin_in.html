@@ -41,12 +41,12 @@
           <p>Añadir Cliente</p>
         </div>
       </a>
-      <a href="/routine.html" class="nav_links">
+      <a href="#modal-rutina" class="nav_links">
         <div class="item__logueado item__2">
           <p>Añadir Rutina</p>
         </div>
       </a>
-      <a href="" class="nav_links" target="_blank">
+      <a href="#modal-Buscar" class="nav_links">
         <div class="item__logueado item__3">
           <p>Busqueda Cliente</p>
         </div>
@@ -54,15 +54,20 @@
     </div>
 
     <div class="items__container">
-      <a href="#cita-usuario" class="nav_links">
+      <a href="#modal-Reporte" class="nav_links">
         <div class="item__logueado item__4">
           <p>Reportes</p>
         </div>
       </a>
+
+      <a href="#modal-pagos" class="nav_links">
       <div class="item__logueado item__5">
         <p>Pagos</p>
       </div>
-      <a href="https://www.youtube.com/results?search_query=gym&sp=EgJAAQ%253D%253D" class="nav_links" target="_blank">
+    </a>
+
+      
+      <a href="#modal-modificar" class="nav_links" >
         <div class="item__logueado item__6">
           <p>Modificar Planes</p>
         </div>
@@ -158,41 +163,290 @@
               
             </div> 
 
-            <a href="" title="Close" class="submitBtn">Enviar</a>
+            <a href="" title="Close" class="submitBtn">Guardar</a>
           </form>
         </div>
       </div>      
   </div>
   </div>
 
-  <div id="cita-usuario" class="modal-contacto" class="modal-actualice">
+  <div id="modal-rutina" class="modal-contacto" >
     <div class="modalbox movedown">
       <a href="" title="Close" class="close">X</a>
       <div class="modal-header">
-        <h2>Solicitar Cita</h2>
+        <h2>Agregar Rutina</h2>
+      </div>       
+      <div class="modal-body">
+        <div class="signupFrm">
+          <form action="" class="form">
+            
+            <div class="inputContainer">
+              <select name="Dia" class="input" placeholder="a">            
+                <option>Marte</option>
+                <option>Miercoles</option>
+                <option>Jueves</option>
+                <option>Viernes</option>
+                <option>Sabado</option>
+                <option>Domingo</option>            
+                <option selected>Lunes</option>                
+                </select>
+              <label for="" class="label">Dia</label>
+            </div>
+
+            <div class="inputContainer">
+              <select name="zona" class="input" placeholder="a">            
+                <option>Pecho</option>
+                <option>Espalda</option>
+                <option>Biceps</option>
+                <option>Triceps</option>      
+                <option selected>Piera</option>                
+                </select>
+              <label for="" class="label">Zona</label>
+            </div>
+      
+            <div class="inputContainer">
+              <select name="Ejercicio" class="input" placeholder="a">            
+                <option>Sentadilla Trasera</option>
+                <option>Extensión Cuádriceps</option>
+                <option>Press Banca</option>
+                <option>Peso Muerto</option>   
+                <option>Press francés</option>   
+                <option selected>Curl Biceps Mancuerna</option>                
+                </select>
+              <label for="" class="label">Ejercicio</label>
+            </div>
+
+            <div class="inputContainer">
+              <input type="number" class="input" placeholder="a">
+              <label for="" class="label">Series</label>
+            </div>
+      
+            <div class="inputContainer">
+              
+              <input type="number" class="input" placeholder="a">
+              <label for="" class="label">Repeticiones</label>
+              
+            </div> 
+
+            <div class="inputContainer">
+              
+              <input type="number" class="input" placeholder="a">
+              <label for="" class="label">Descaso</label>
+              
+            </div> 
+
+            <a href="" title="Close" class="submitBtn">Guardar</a>
+          </form>
+        </div>
+      </div>      
+  </div>
+  </div>
+
+  <div id="modal-Buscar" class="modal-contacto" >
+    <div class="modalbox movedown" id="modal-routine">
+      <a href="" title="Close" class="close">X</a>
+      <div class="modal-header">
+        <h2>Buscar Cliente</h2>
+      </div>
+      <div class="modal-body">
+        <div class="signupFrm">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Documento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>98717046</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@21912301</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>38759652</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-Reporte" class="modal-contacto" >
+    <div class="modalbox movedown" id="modal-routine">
+      <a href="" title="Close" class="close">X</a>
+      <div class="modal-header">
+        <h2>Reporte</h2>
       </div>
       <div class="modal-body">
         <div class="signupFrm">
           <section class="price container" id="routine_container">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Seleccionar Fecha</label>
-              <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Seleccionar Hora</label>
-              <input type="time" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Seleccionar Sede</label>
-              <select name="sede-citas" class="form-control" id="exampleFormControlInput1">
-                <option selected="selected" value="seleccionarSede" disabled>Seleccionar Sede</option>
-                <option value="sedeNorte">Sede Norte</option>
-                <option value="sedeNorte">Sede Sur</option>
-                <option value="sedeNorte">Sede Centro</option>
-              </select>
-            </div>
-            <a href="/user_in.html" class="btn btn-danger">Confirmar Cita</a>
+            <h2 class="subtitle">Planes Gymsis</h2>
 
+            <div class="price_table" id="planes_actualice">
+              <div class="price_element" id="actualice-card">
+                <p class="price_name">Black</p>
+                <h3 class="plan_price">$80.000</h3>
+                <div class="price_item" id="plan-item">
+                  <p class="price_features">Acceso a una de nuestras sedes
+                    El valor es para la mensualidad*
+                     Desde las 5:00AM hasta las 10:00PM todos los días
+                  </p>                 
+                </div>
+                <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6736" class="price_button"
+                  target="_blank">Comprar</a>
+              </div>
+              <div class="price_element price_element--best" id="actualice-card">
+                <p class="price_name">Amatista</p>
+                <h3 class="plan_price">$120.000</h3>
+                <div class="price_item" id="plan-item">
+                  <p class="price_features">Acceso a dos de nuestras sedes
+                    El valor es para la mensualidad*
+                    Desde las 5:00AM hasta las 10:00PM todos los días
+                  </p>                  
+                </div>
+                <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6736" class="price_button"
+                  target="_blank">Comprar</a>
+              </div>
+
+              <div class="price_element" id="actualice-card">
+                <p class="price_name">Diamante</p>
+                <h3 class="plan_price">$150.000</h3>
+                <div id="plan-item" class="price_item">
+                  <p class="price_features">Acceso a todas nuestras sedes
+                    El valor es para la mensualidad*
+                    Desde las 5:00AM hasta las 10:00PM todos los días
+                  </p>                  
+                </div>
+                <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6736" class="price_button"
+                  target="_blank">Comprar</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-pagos" class="modal-contacto" >
+    <div class="modalbox movedown" id="modal-routine">
+      <a href="" title="Close" class="close">X</a>
+      <div class="modal-header">
+        <h2>Pagos</h2>
+      </div>
+      <div class="modal-body">
+        <div class="signupFrm">
+          <section class="price container" id="routine_container">
+            <h2 class="subtitle">Planes Gymsis</h2>
+
+            <div class="price_table" id="planes_actualice">
+              <div class="price_element" id="actualice-card">
+                <p class="price_name">Black</p>
+                <h3 class="plan_price">$80.000</h3>
+                <div class="price_item" id="plan-item">
+                  <p class="price_features">Acceso a una de nuestras sedes
+                    El valor es para la mensualidad*
+                     Desde las 5:00AM hasta las 10:00PM todos los días
+                  </p>                 
+                </div>
+                <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6736" class="price_button"
+                  target="_blank">Comprar</a>
+              </div>
+              <div class="price_element price_element--best" id="actualice-card">
+                <p class="price_name">Amatista</p>
+                <h3 class="plan_price">$120.000</h3>
+                <div class="price_item" id="plan-item">
+                  <p class="price_features">Acceso a dos de nuestras sedes
+                    El valor es para la mensualidad*
+                    Desde las 5:00AM hasta las 10:00PM todos los días
+                  </p>                  
+                </div>
+                <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6736" class="price_button"
+                  target="_blank">Comprar</a>
+              </div>
+
+              <div class="price_element" id="actualice-card">
+                <p class="price_name">Diamante</p>
+                <h3 class="plan_price">$150.000</h3>
+                <div id="plan-item" class="price_item">
+                  <p class="price_features">Acceso a todas nuestras sedes
+                    El valor es para la mensualidad*
+                    Desde las 5:00AM hasta las 10:00PM todos los días
+                  </p>                  
+                </div>
+                <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6736" class="price_button"
+                  target="_blank">Comprar</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div id="modal-modificar" class="modal-contacto" >
+    <div class="modalbox movedown" id="modal-routine">
+      <a href="" title="Close" class="close">X</a>
+      <div class="modal-header">
+        <h2>Modificar Plan</h2>
+      </div>
+      <div class="modal-body">
+        <div class="signupFrm">
+          <section class="price container" id="routine_container">
+            <h2 class="subtitle">Planes Gymsis</h2>
+
+            <div class="price_table" id="planes_actualice">
+              <div class="price_element" id="actualice-card">
+                <p class="price_name">Black</p>
+                <h3 class="plan_price">$80.000</h3>
+                <div class="price_item" id="plan-item">
+                  <p class="price_features">Acceso a una de nuestras sedes
+                    El valor es para la mensualidad*
+                     Desde las 5:00AM hasta las 10:00PM todos los días
+                  </p>                 
+                </div>
+                <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6736" class="price_button"
+                  target="_blank">Comprar</a>
+              </div>
+              <div class="price_element price_element--best" id="actualice-card">
+                <p class="price_name">Amatista</p>
+                <h3 class="plan_price">$120.000</h3>
+                <div class="price_item" id="plan-item">
+                  <p class="price_features">Acceso a dos de nuestras sedes
+                    El valor es para la mensualidad*
+                    Desde las 5:00AM hasta las 10:00PM todos los días
+                  </p>                  
+                </div>
+                <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6736" class="price_button"
+                  target="_blank">Comprar</a>
+              </div>
+
+              <div class="price_element" id="actualice-card">
+                <p class="price_name">Diamante</p>
+                <h3 class="plan_price">$150.000</h3>
+                <div id="plan-item" class="price_item">
+                  <p class="price_features">Acceso a todas nuestras sedes
+                    El valor es para la mensualidad*
+                    Desde las 5:00AM hasta las 10:00PM todos los días
+                  </p>                  
+                </div>
+                <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6736" class="price_button"
+                  target="_blank">Comprar</a>
+              </div>
+            </div>
           </section>
         </div>
       </div>
