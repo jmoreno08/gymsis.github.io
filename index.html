@@ -1,331 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="/images/icono-gymsis.png"
-      type="image/x-icon"
-    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/modal-contacto.css">
-    <link rel="stylesheet" href="/css/modal-iniciarSesion.css">
-    <script src="componets/footer.js" type="text/javascript" defer></script>  
-    <title>Gymsis</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/images/icono-gymsis.png" type="image/x-icon" />
 
-  <body>
-    <header class="hero">
-        <nav class="nav">
-          <div class="nav_logo">
-            <a href="/index.html">
-              <img class="logo" src="/images/logo_4.png" alt="" srcset="">
-            </a>
-          </div>
-          <ul class="nav_link nav_link--menu">
-            <li class="nav_item">
-              <a href="/index.html" class="nav_links">Inicio</a>
-            </li>
-            <li class="nav_item">
-              <a href="/quienes-somos.html" class="nav_links">¿Quienes Somos?</a>
-            </li>
-            <li class="nav_item">
-              <a href="#modal-contacto" class="nav_links">Contactanos</a>
-            </li>
-            <li class="nav_item">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#modal-registro" class="nav_links">Registrarse</a>
-            </li>
-            <li class="nav_item">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#modal-iniciarSesion" class="nav_links">Iniciar Sesión</a>
-            </li>
-            <img src="/images/close.svg" alt="cerrar menu" class="nav_close" />
-          </ul>
-          <div class="nav_menu">
-            <img src="/images/menu.svg" alt="menu hamburguesa" class="nav_img" />
-          </div>
-      </nav>
-      <section class="hero_container">
-        <h1 class="hero_title">GYMSIS</h1>
-        <p class="hero_paragraph">
-          ¡HAZLO AHORA!.
-        </p>
-        <a href="#" class="buttomregister">Regístrate</a>
-      </section>
-    </header>
-    <main>
-      <section class="container benefits">
-        <h2 class="subtitle">Beneficios</h2>
-        <p class="benefits_paragraph">
-          Un gimnasio ofrece una amplia gama de beneficios para aquellos que buscan mantenerse en forma y mejorar su salud. Aquí hay algunos beneficios comunes de un gimnasio.
-        </p>
-        <div class="benefits_main">
-          <article class="benefits_icons">
-            <img
-              src="/images/gym-1.svg"
-              alt="Beneficio 1"
-              class="benefits_icon"
-            />
-            <h3 class="benefits_title">Beneficios 1</h3>
-            <p class="benefits_paragraph">
-              Mejora de la salud cardiovascular: Los ejercicios cardiovasculares, como correr en una cinta de correr o andar en bicicleta estática, ayudan a fortalecer el corazón y los pulmones, mejorando la circulación sanguínea y reduciendo el riesgo de enfermedades cardíacas..
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/modal-contacto.css">
+  <link rel="stylesheet" href="/css/modal-iniciarSesion.css">
+  <script src="componets/footer.js" type="text/javascript" defer></script>
+  <title>Gymsis</title>
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="nav_logo">
+        <a href="/index.html">
+          <img class="logo" src="/images/logo_4.png" alt="" srcset="">
+        </a>
+      </div>
+      <ul class="nav_link nav_link--menu">
+        <li class="nav_item">
+          <a href="/index.html" class="nav_links">Inicio</a>
+        </li>
+        <li class="nav_item">
+          <a href="/quienes-somos.html" class="nav_links">¿Quienes Somos?</a>
+        </li>
+        <li class="nav_item">
+          <a href="#modal-contacto" class="nav_links">Contactanos</a>
+        </li>
+        <li class="nav_item">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modal-registro" class="nav_links">Registrarse</a>
+        </li>
+        <li class="nav_item">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modal-iniciarSesion" class="nav_links">Iniciar Sesión</a>
+        </li>
+        <img src="/images/close.svg" alt="cerrar menu" class="nav_close" />
+      </ul>
+      <div class="nav_menu">
+        <img src="/images/menu.svg" alt="menu hamburguesa" class="nav_img" />
+      </div>
+    </nav>
+    <section class="hero_container">
+      <h1 class="hero_title">GYMSIS</h1>
+      <p class="hero_paragraph">
+        ¡HAZLO AHORA!.
+      </p>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#modal-registro" class="buttomregister">Regístrate</a>
+    </section>
+  </header>
+  <main>
+    <section class="container benefits">
+      <h2 class="subtitle">Beneficios</h2>
+      <p class="benefits_paragraph">
+        Un gimnasio ofrece una amplia gama de beneficios para aquellos que buscan mantenerse en forma y mejorar su
+        salud. Aquí hay algunos beneficios comunes de un gimnasio.
+      </p>
+      <div class="benefits_main">
+        <article class="benefits_icons">
+          <img src="/images/gym-1.svg" alt="Beneficio 1" class="benefits_icon" />
+          <h3 class="benefits_title">Beneficios 1</h3>
+          <p class="benefits_paragraph">
+            Mejora de la salud cardiovascular: Los ejercicios cardiovasculares, como correr en una cinta de correr o
+            andar en bicicleta estática, ayudan a fortalecer el corazón y los pulmones, mejorando la circulación
+            sanguínea y reduciendo el riesgo de enfermedades cardíacas..
+          </p>
+        </article>
+        <article class="benefits_icons">
+          <img src="/images/gym-2.svg" alt="Beneficio 1" class="benefits_icon" />
+          <h3 class="benefits_title">Beneficios 2</h3>
+          <p class="benefits_paragraph">
+            Fortalecimiento muscular: El uso de pesas y máquinas de entrenamiento de fuerza en un gimnasio puede ayudar
+            a desarrollar masa muscular y fortalecer los músculos. Esto puede mejorar la resistencia, la fuerza y la
+            capacidad funcional en actividades diarias..
+          </p>
+        </article>
+        <article class="benefits_icons">
+          <img src="/images/gym-3.svg" alt="Beneficio 1" class="benefits_icon" />
+          <h3 class="benefits_title">Beneficios 2</h3>
+          <p class="benefits_paragraph">
+            Pérdida de peso y control del peso: El ejercicio regular en un gimnasio combinado con una dieta saludable
+            puede ayudar a quemar calorías y promover la pérdida de peso. Además, mantener un peso saludable puede
+            reducir el riesgo de enfermedades crónicas.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="seats">
+      <div class="seats_container container">
+        <img src="/images/leftarrow.svg" class="seats_arrow" id="before" />
+        <section class="seats_body seats_body--show" data-id="1">
+          <div class="seats_text">
+            <h2 class="subtitle">
+              Sede 1 <span class="seats_course">Lugar de la sede</span>
+            </h2>
+            <p class="seats_review">
+              Cl. 71 #65 - 150 -- Centro comercial floridad, tercer piso.
             </p>
-          </article>
-          <article class="benefits_icons">
-            <img
-              src="/images/gym-2.svg"
-              alt="Beneficio 1"
-              class="benefits_icon"
-            />
-            <h3 class="benefits_title">Beneficios 2</h3>
-            <p class="benefits_paragraph">
-              Fortalecimiento muscular: El uso de pesas y máquinas de entrenamiento de fuerza en un gimnasio puede ayudar a desarrollar masa muscular y fortalecer los músculos. Esto puede mejorar la resistencia, la fuerza y la capacidad funcional en actividades diarias..
-            </p>
-          </article>
-          <article class="benefits_icons">
-            <img
-              src="/images/gym-3.svg"
-              alt="Beneficio 1"
-              class="benefits_icon"
-            />
-            <h3 class="benefits_title">Beneficios 2</h3>
-            <p class="benefits_paragraph">
-              Pérdida de peso y control del peso: El ejercicio regular en un gimnasio combinado con una dieta saludable puede ayudar a quemar calorías y promover la pérdida de peso. Además, mantener un peso saludable puede reducir el riesgo de enfermedades crónicas.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="seats">
-        <div class="seats_container container">
-          <img src="/images/leftarrow.svg" class="seats_arrow" id="before" />
-          <section class="seats_body seats_body--show" data-id="1">
-            <div class="seats_text">
-              <h2 class="subtitle">
-                Sede 1 <span class="seats_course">Lugar de la sede</span>
-              </h2>
-              <p class="seats_review">
-                Cl. 71 #65 - 150 -- Centro comercial floridad, tercer piso.
-              </p>
-            </div>
-            <figure class="seats_picture">
-              <img src="/images/sedes.jpeg" class="seats_img" />
-            </figure>
-          </section>
-          <section class="seats_body" data-id="2">
-            <div class="seats_text">
-              <h2 class="subtitle">
-                Sede 2 <span class="seats_course">Lugar de la sede</span>
-              </h2>
-              <p class="seats_review">
-                Cra. 48 #32B Sur-139 -- Centro comercial Viva Envigado, cuarto piso.
-              </p>
-            </div>
-            <figure class="seats_picture">
-              <img src="/images/sedes.jpeg" class="seats_img" />
-            </figure>
-          </section>
-          <section class="seats_body" data-id="3">
-            <div class="seats_text">
-              <h2 class="subtitle">
-                Sede 3 <span class="seats_course">Lugar de la sede</span>
-              </h2>
-              <p class="seats_review">
-                Cra. 52 #65-91 -- Centro comercial Aventura, tercer piso.
-              </p>
-            </div>
-            <figure class="seats_picture">
-              <img src="/images/sedes.jpeg" class="seats_img" />
-            </figure>
-          </section>
-          <img src="/images/rightarrow.svg" class="seats_arrow" id="next" />
-        </div>
-      </section>
-
-      <section class="price container">
-        <h2 class="subtitle">Planes Gymsis</h2>
-
-        <div class="price_table">
-          <div class="price_element">
-            <p class="price_name">Black</p>
-            <h3 class="plan_price">$80.000</h3>
-            <div class="price_item">
-              <p class="price_features">Acceso a una de nuestras sedes</p>
-              <p class="price_features">El valor es para la mensualidad*</p>
-              <p class="price_features">Desde las 5:00AM hasta las 10:00PM todos los días</p>
-            </div>
-            <a href="" class="price_button">Comprar</a>
           </div>
-          <div class="price_element price_element--best">
-            <p class="price_name">Amatista</p>
-            <h3 class="plan_price">$120.000</h3>
-            <div class="price_item">
-              <p class="price_features">Acceso a dos de nuestras sedes </p>
-              <p class="price_features">El valor es para la mensualidad*</p>
-              <p class="price_features">Desde las 5:00AM hasta las 10:00PM todos los días</p>
-            </div>
-            <a href="" class="price_button">Comprar</a>
-          </div>
-
-          <div class="price_element">
-            <p class="price_name">Diamante</p>
-            <h3 class="plan_price">$150.000</h3>
-            <div class="price_item">
-              <p class="price_features">Acceso a todas nuestras sedes</p>
-              <p class="price_features">El valor es para la mensualidad*</p>
-              <p class="price_features">Desde las 5:00AM hasta las 10:00PM todos los días</p>
-            </div>
-            <a href="" class="price_button">Comprar</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="knowledge">
-        <div class="knowledge_container container">
-          <div class="knowledge_texts">
-            <h2 class="subtitle">Las mejores máquinas</h2>
-            <p class="knowledge_paragraph">
-              Todas nuestras sedes están dotadas completamente con las mejores máquinas en las cuales hacer el ejercicio será más fácil y eficiente para cumplir tus metas.
-            </p>
-            <a href="#" class="buttomregister">Regístrate</a>
-          </div>
-          <figure class="knowledge_picture">
-            <img src="/images/banner.jpg" class="knowledge_img" />
+          <figure class="seats_picture">
+            <img src="/images/sedes.jpeg" class="seats_img" />
           </figure>
+        </section>
+        <section class="seats_body" data-id="2">
+          <div class="seats_text">
+            <h2 class="subtitle">
+              Sede 2 <span class="seats_course">Lugar de la sede</span>
+            </h2>
+            <p class="seats_review">
+              Cra. 48 #32B Sur-139 -- Centro comercial Viva Envigado, cuarto piso.
+            </p>
+          </div>
+          <figure class="seats_picture">
+            <img src="/images/sedes.jpeg" class="seats_img" />
+          </figure>
+        </section>
+        <section class="seats_body" data-id="3">
+          <div class="seats_text">
+            <h2 class="subtitle">
+              Sede 3 <span class="seats_course">Lugar de la sede</span>
+            </h2>
+            <p class="seats_review">
+              Cra. 52 #65-91 -- Centro comercial Aventura, tercer piso.
+            </p>
+          </div>
+          <figure class="seats_picture">
+            <img src="/images/sedes.jpeg" class="seats_img" />
+          </figure>
+        </section>
+        <img src="/images/rightarrow.svg" class="seats_arrow" id="next" />
+      </div>
+    </section>
+
+    <section class="price container">
+      <h2 class="subtitle">Planes Gymsis</h2>
+
+      <div class="price_table">
+        <div class="price_element">
+          <p class="price_name">Black</p>
+          <h3 class="plan_price">$80.000</h3>
+          <div class="price_item">
+            <p class="price_features">Acceso a una de nuestras sedes</p>
+            <p class="price_features">El valor es para la mensualidad*</p>
+            <p class="price_features">Desde las 5:00AM hasta las 10:00PM todos los días</p>
+          </div>
+          <a href="" data-bs-toggle="modal" data-bs-target="#modal-iniciarSesion" class="price_button">Comprar</a>
         </div>
-      </section>
-      <div id="modal-contacto" class="modal-contacto">
-        <div class="modalbox movedown">
-            <a href="" title="Close" class="close">X</a>
-            <div class="modal-header">
-              <h2>Contactanos</h2>
-            </div>       
-            <div class="modal-body">
-              <div class="signupFrm">
-                <form action="" class="form">
-                  
-                  <div class="inputContainer">
-                    <input type="text" class="input" placeholder="a">
-                    <label for="" class="label">Nombre</label>
-                  </div>
-    
-                  <div class="inputContainer">
-                    <input type="text" class="input" placeholder="a">
-                    <label for="" class="label">Apellido</label>
-                  </div>
-            
-                  <div class="inputContainer">
-                    <input type="text" class="input" placeholder="a">
-                    <label for="" class="label">Telefono</label>
-                  </div>
-    
-                  <div class="inputContainer">
-                    <input type="text" class="input" placeholder="a">
-                    <label for="" class="label">Correo Electronico</label>
-                  </div>
-            
-                  <div class="inputContainer">
-                    
-                    <input type="text" class="input" placeholder="a">
-                    <label for="" class="label">Mensaje</label>
-                    
-                  </div> 
-                  <a href="" title="Close" class="submitBtn">Enviar</a>
-                </form>
-              </div>
-            </div>      
+        <div class="price_element price_element--best">
+          <p class="price_name">Amatista</p>
+          <h3 class="plan_price">$120.000</h3>
+          <div class="price_item">
+            <p class="price_features">Acceso a dos de nuestras sedes </p>
+            <p class="price_features">El valor es para la mensualidad*</p>
+            <p class="price_features">Desde las 5:00AM hasta las 10:00PM todos los días</p>
+          </div>
+          <a href="" data-bs-toggle="modal" data-bs-target="#modal-iniciarSesion" class="price_button">Comprar</a>
+        </div>
+
+        <div class="price_element">
+          <p class="price_name">Diamante</p>
+          <h3 class="plan_price">$150.000</h3>
+          <div class="price_item">
+            <p class="price_features">Acceso a todas nuestras sedes</p>
+            <p class="price_features">El valor es para la mensualidad*</p>
+            <p class="price_features">Desde las 5:00AM hasta las 10:00PM todos los días</p>
+          </div>
+          <a href="" data-bs-toggle="modal" data-bs-target="#modal-registro" class="price_button">Comprar</a>
         </div>
       </div>
+    </section>
 
-      <div class="modal fade" id="modal-registro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header" text-align="center">
-              <img src="/images/logo_4.png" width="150px">
-              <h5 class="modal-title" id="modal-registro-label"> <b>Formulario de registro</b></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-  
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1" >Nombre completo:</span>
-                <input type="text" id="campoNombre" class="form-control" placeholder="Nombre completo"  aria-label="Nombre completo" aria-describedby="basic-addon1">
+    <section class="knowledge">
+      <div class="knowledge_container container">
+        <div class="knowledge_texts">
+          <h2 class="subtitle">Las mejores máquinas</h2>
+          <p class="knowledge_paragraph">
+            Todas nuestras sedes están dotadas completamente con las mejores máquinas en las cuales hacer el ejercicio
+            será más fácil y eficiente para cumplir tus metas.
+          </p>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modal-registro" class="buttomregister">Regístrate</a>
+        </div>
+        <figure class="knowledge_picture">
+          <img src="/images/banner.jpg" class="knowledge_img" />
+        </figure>
+      </div>
+    </section>
+    <div id="modal-contacto" class="modal-contacto">
+      <div class="modalbox movedown">
+        <a href="" title="Close" class="close">X</a>
+        <div class="modal-header">
+          <h2>Contactanos</h2>
+        </div>
+        <div class="modal-body">
+          <div class="signupFrm">
+            <form action="" class="form">
+
+              <div class="inputContainer">
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Nombre</label>
               </div>
-              
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1" >Apellidos:</span>
-                  <input type="text" id="campoApellido" class="form-control" placeholder="Apellidos" aria-label="Apellidos" aria-describedby="basic-addon1">
-                </div>
-               
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1" ># Identificación:</span>
-                    <input type="number" id="campoIdentificacion" class="form-control" placeholder="# Identificación" aria-label="# Identificación" aria-describedby="basic-addon1">
-                  </div>
-                  
-                    <div class="input-group mb-3">
-                      <span class="input-group-text" id="basic-addon1" >E-mail:</span>
-                      <input type="text" id="campoCorreo" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon1">
-                    </div>
-  
-                    <div class="input-group mb-3">
-                      <span class="input-group-text" id="basic-addon1" ># Celular:</span>
-                      <input type="number" id="campoCelular" class="form-control" placeholder="# Celular" aria-label="# Celular" aria-describedby="basic-addon1">
-                    </div>
-  
-                    <div class="input-group mb-3">
-                      <span class="input-group-text" id="basic-addon1" >Contraseña:</span>
-                      <input type="password" id="campoContraseña"class="form-control" placeholder="Contraseña" aria-label="Contraseña" aria-describedby="basic-addon1">
-                    </div>
-                    
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-danger" id="botonRegistrarse">Registrar</button>
-            </div>
+
+              <div class="inputContainer">
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Apellido</label>
+              </div>
+
+              <div class="inputContainer">
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Telefono</label>
+              </div>
+
+              <div class="inputContainer">
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Correo Electronico</label>
+              </div>
+
+              <div class="inputContainer">
+
+                <input type="text" class="input" placeholder="a">
+                <label for="" class="label">Mensaje</label>
+
+              </div>
+              <a href="" title="Close" class="submitBtn">Enviar</a>
+            </form>
           </div>
         </div>
       </div>
-  
-      <div class="modal fade" id="modal-iniciarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header" text-align="center" >
-              <h5 class="modal-title" id="exampleModalLabel" >Iniciar sesión</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+
+    <div class="modal fade" id="modal-registro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" text-align="center">
+            <img src="/images/logo_4.png" width="150px">
+            <h5 class="modal-title" id="modal-registro-label"> <b>Formulario de registro</b></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Nombre completo:</span>
+              <input type="text" id="campoNombre" class="form-control" placeholder="Nombre completo"
+                aria-label="Nombre completo" aria-describedby="basic-addon1">
             </div>
-            <div class="modal-body">
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Usuario:</span>
-                <input type="text" class="form-control" id="campoId" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Contraseña:</span>
-                <input type="password" class="form-control" id="password" placeholder="Contraseña" aria-label="password" aria-describedby="basic-addon1">
-              </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Apellidos:</span>
+              <input type="text" id="campoApellido" class="form-control" placeholder="Apellidos" aria-label="Apellidos"
+                aria-describedby="basic-addon1">
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" id="botonLogin" class="btn btn-danger" id="botonLogin">Login</button>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"># Identificación:</span>
+              <input type="number" id="campoIdentificacion" class="form-control" placeholder="# Identificación"
+                aria-label="# Identificación" aria-describedby="basic-addon1">
             </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">E-mail:</span>
+              <input type="text" id="campoCorreo" class="form-control" placeholder="E-mail" aria-label="E-mail"
+                aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"># Celular:</span>
+              <input type="number" id="campoCelular" class="form-control" placeholder="# Celular" aria-label="# Celular"
+                aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Contraseña:</span>
+              <input type="password" id="campoContraseña" class="form-control" placeholder="Contraseña"
+                aria-label="Contraseña" aria-describedby="basic-addon1">
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-danger" id="botonRegistrarse">Registrar</button>
           </div>
         </div>
-      </div>    
+      </div>
+    </div>
 
-    </main>
+    <div class="modal fade" id="modal-iniciarSesion" tabindex="-1" aria-labelledby="exampleModalLabel"
+      data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" text-align="center">
+            <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Usuario:</span>
+              <input type="text" class="form-control" id="campoId" placeholder="Usuario" aria-label="Username"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Contraseña:</span>
+              <input type="password" class="form-control" id="password" placeholder="Contraseña" aria-label="password"
+                aria-describedby="basic-addon1">
+            </div>
+            </div>
+          <div class="modal-footer">
+            <button type="button" id="botonCrearCuenta" class="btn btn-danger" data-bs-toggle="modal"
+              data-bs-target="#modal-registro"> Crear Cuenta</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" id="botonLogin" class="btn btn-danger" id="botonLogin">Login</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <footer-component></footer-component>
+  </main>
 
-    <script src="/js/slider.js"></script>
-    <script src="/js/menu.js"></script>
-    <script src="/js/modal-contacto.js"></script>
-    <script src="/js/index.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <footer-component></footer-component>
 
-  </body>
+  <script src="/js/slider.js"></script>
+  <script src="/js/menu.js"></script>
+  <script src="/js/modal-contacto.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
