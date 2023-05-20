@@ -18,6 +18,14 @@ botonRegistrarse.addEventListener("click", function(){
 
 })
 
+var input = document.getElementById("password");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("botonLogin").click();
+  }
+});
+
 botonLogin.addEventListener("click",function(){
 
     if(contador <= 2){
