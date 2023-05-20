@@ -46,7 +46,7 @@ nav > a {
 }
 
 .item__logueado {
-    background-color: #952828;
+    background-color: #1964a9;
     width: 19rem;
     height: 10rem;
     border-radius: 1rem;
@@ -74,9 +74,17 @@ nav > a {
 }
 
 #actualice-card{
-  overflow: auto;
   max-height: 20rem;
 }
 #planes_actualice{
   padding-top: 0;
+}
+
+#cita-usuario{
+  top: -63px;
+}
+
+#plan-item{
+  margin-top: 0 ;
+  margin-bottom: 0;
 }
