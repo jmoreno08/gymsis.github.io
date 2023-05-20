@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/modal-contacto.css">
     <link rel="stylesheet" href="/css/modal-iniciarSesion.css">
-    
-
+    <script src="componets/footer.js" type="text/javascript" defer></script>  
     <title>Gymsis</title>
   </head>
 
@@ -59,7 +58,6 @@
         <a href="#" class="buttomregister">Regístrate</a>
       </section>
     </header>
-
     <main>
       <section class="container benefits">
         <h2 class="subtitle">Beneficios</h2>
@@ -69,7 +67,7 @@
         <div class="benefits_main">
           <article class="benefits_icons">
             <img
-              src="/images/shapes.svg"
+              src="/images/gym-1.svg"
               alt="Beneficio 1"
               class="benefits_icon"
             />
@@ -80,7 +78,7 @@
           </article>
           <article class="benefits_icons">
             <img
-              src="/images/shapes.svg"
+              src="/images/gym-2.svg"
               alt="Beneficio 1"
               class="benefits_icon"
             />
@@ -91,7 +89,7 @@
           </article>
           <article class="benefits_icons">
             <img
-              src="/images/shapes.svg"
+              src="/images/gym-3.svg"
               alt="Beneficio 1"
               class="benefits_icon"
             />
@@ -306,7 +304,7 @@
                 <input type="text" class="form-control" id="campoId" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Contrasena:</span>
+                <span class="input-group-text" id="basic-addon1">Contraseña:</span>
                 <input type="password" class="form-control" id="password" placeholder="Contraseña" aria-label="password" aria-describedby="basic-addon1">
               </div>
             </div>
@@ -320,36 +318,8 @@
 
     </main>
 
-    <footer class="footer">
-      <section class="footer_container container">
-        <form class="footer_form">
-          <h2 class="footer_newsletter">Suscripción newsletter</h2>
-          <div class="footer_inputs">
-            <input type="email" placeholder="Email" class="footer_input" />
-            <input
-              type="submit"
-              placeholder="Registrate"
-              class="footer_submit"
-            />
-          </div>
-        </form>
-      </section>
-      <section class="footer_copy container">
-        <div class="footer_social">
-          <a href="" class="footer_icons">
-            <img src="/images/facebook.svg" alt="" class="footer_img" />
-          </a>
-          <a href="" class="footer_icons">
-            <img src="/images/twitter.svg" alt="" class="footer_img" />
-          </a>
-          <a href="" class="footer_icons">
-            <img src="/images/youtube.svg" alt="" class="footer_img" />
-          </a>
-        </div>
-        <h3 class="footer_copyrigth">&copy; Terminos Legales Gymsis</h3>
-      </section>
+    <footer-component></footer-component>
 
-    </footer>
     <script src="/js/slider.js"></script>
     <script src="/js/menu.js"></script>
     <script src="/js/modal-contacto.js"></script>
