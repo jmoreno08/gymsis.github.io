@@ -274,7 +274,7 @@ padding-left: 10%;
   max-width: 700px;
 }
 .seats_course {
-  background-color: #e37b7b;
+  background-color: rgb(149, 40, 40);
   color: white;
   display: inline-block;
   padding: 5px;
