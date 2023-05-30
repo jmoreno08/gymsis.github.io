@@ -3,7 +3,7 @@ PROYECTO FINAL METOLOGIAS DE DESARROLLO DE S.I.
 
 Integrantes:
 
-👨‍💻 Hector Jaime Ardila Velez
-👨‍💻 Yilmer Moreno Salas 
-👨‍💻 Jonathan Moreno Nuñez
-👨‍💻 Sebastian Rivera Mira
+👨‍💻 **Hector Jaime Ardila Velez**  
+👨‍💻 **Yilmer Moreno Salas**   
+👨‍💻 **Jonathan Moreno Nuñez**  
+👨‍💻 **Sebastian Rivera Mira**  
