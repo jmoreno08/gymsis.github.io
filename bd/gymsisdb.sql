@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-05-2023 a las 19:23:46
+-- Tiempo de generación: 31-05-2023 a las 18:07:21
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `gymsis`
+-- Base de datos: `gymsisdb`
 --
 
 -- --------------------------------------------------------
@@ -44,6 +44,47 @@ CREATE TABLE `cita` (
 
 INSERT INTO `cita` (`IdCita`, `CitaName`, `CitaDescripcion`, `Fecha`, `Hora`, `CitaEstado`, `IdUsuario`, `IdEspecialista`) VALUES
 (1, 'Revisión nutricionista', 'Revisar estado actual de la dieta', '2023-05-19', '12:12:58', 'activa', 2, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `contactanos`
+--
+
+CREATE TABLE `contactanos` (
+  `idcontactanos` int(11) NOT NULL,
+  `nombre` varchar(40) NOT NULL,
+  `apellidos` varchar(40) NOT NULL,
+  `telefono` varchar(20) NOT NULL,
+  `correo` int(11) NOT NULL,
+  `mensaje` int(11) NOT NULL,
+  `fecha` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `ejercicio`
+--
+
+CREATE TABLE `ejercicio` (
+  `idejercicio` int(11) NOT NULL,
+  `tipoejercicio` varchar(20) NOT NULL,
+  `nombreejercicio` varchar(20) NOT NULL,
+  `descripcion` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `ejercicio`
+--
+
+INSERT INTO `ejercicio` (`idejercicio`, `tipoejercicio`, `nombreejercicio`, `descripcion`) VALUES
+(1, 'pierna', 'sentadilla trasera', ''),
+(2, 'pierna', 'extensión cuádriceps', ''),
+(3, 'pecho', 'press banca', ''),
+(4, 'espalda', 'peso muerto', ''),
+(5, 'biceps', 'curl biceps mancuern', ''),
+(6, 'triceps', 'press francés', '');
 
 -- --------------------------------------------------------
 
@@ -90,6 +131,18 @@ INSERT INTO `inscripciones` (`IdInscripcion`, `IdUsuario`, `IdPlan`, `FechaInici
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `newsletter`
+--
+
+CREATE TABLE `newsletter` (
+  `idnewsletter` int(11) NOT NULL,
+  `correonewsletter` int(50) NOT NULL,
+  `fecha` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `pagos`
 --
 
@@ -128,6 +181,22 @@ INSERT INTO `plan` (`IdPlan`, `PlanNombre`, `PlanCosto`, `PlanPeriodo`) VALUES
 (1, 'black', '80000', 30),
 (2, 'Amatista', '120000', 30),
 (3, 'Diamante', '150000', 30);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `planrutina`
+--
+
+CREATE TABLE `planrutina` (
+  `idplanrutina` int(11) NOT NULL,
+  `idusuario` int(11) NOT NULL,
+  `idejercicio` int(11) NOT NULL,
+  `serie` int(11) NOT NULL,
+  `repeticiones` int(11) NOT NULL,
+  `descanso` int(11) NOT NULL,
+  `fecha` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -174,9 +243,7 @@ CREATE TABLE `roles` (
 
 INSERT INTO `roles` (`IdRoles`, `RolesNombre`) VALUES
 (1, 'Administrador'),
-(2, 'Usuario'),
-(3, 'Administrador'),
-(4, 'Usuario');
+(2, 'Usuario');
 
 -- --------------------------------------------------------
 
@@ -226,6 +293,18 @@ ALTER TABLE `cita`
   ADD KEY `Cita_fk1` (`IdEspecialista`);
 
 --
+-- Indices de la tabla `contactanos`
+--
+ALTER TABLE `contactanos`
+  ADD PRIMARY KEY (`idcontactanos`);
+
+--
+-- Indices de la tabla `ejercicio`
+--
+ALTER TABLE `ejercicio`
+  ADD PRIMARY KEY (`idejercicio`);
+
+--
 -- Indices de la tabla `especialista`
 --
 ALTER TABLE `especialista`
@@ -240,6 +319,12 @@ ALTER TABLE `inscripciones`
   ADD KEY `fkinscripcionesplan` (`IdPlan`);
 
 --
+-- Indices de la tabla `newsletter`
+--
+ALTER TABLE `newsletter`
+  ADD PRIMARY KEY (`idnewsletter`);
+
+--
 -- Indices de la tabla `pagos`
 --
 ALTER TABLE `pagos`
@@ -252,6 +337,14 @@ ALTER TABLE `pagos`
 --
 ALTER TABLE `plan`
   ADD PRIMARY KEY (`IdPlan`);
+
+--
+-- Indices de la tabla `planrutina`
+--
+ALTER TABLE `planrutina`
+  ADD PRIMARY KEY (`idplanrutina`),
+  ADD KEY `fkrutinausuario` (`idusuario`),
+  ADD KEY `fkrutinaejercicio` (`idejercicio`);
 
 --
 -- Indices de la tabla `rol`
@@ -285,6 +378,18 @@ ALTER TABLE `cita`
   MODIFY `IdCita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT de la tabla `contactanos`
+--
+ALTER TABLE `contactanos`
+  MODIFY `idcontactanos` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `ejercicio`
+--
+ALTER TABLE `ejercicio`
+  MODIFY `idejercicio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT de la tabla `especialista`
 --
 ALTER TABLE `especialista`
@@ -297,6 +402,12 @@ ALTER TABLE `inscripciones`
   MODIFY `IdInscripcion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT de la tabla `newsletter`
+--
+ALTER TABLE `newsletter`
+  MODIFY `idnewsletter` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `pagos`
 --
 ALTER TABLE `pagos`
@@ -307,6 +418,12 @@ ALTER TABLE `pagos`
 --
 ALTER TABLE `plan`
   MODIFY `IdPlan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT de la tabla `planrutina`
+--
+ALTER TABLE `planrutina`
+  MODIFY `idplanrutina` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `rol`
@@ -350,6 +467,13 @@ ALTER TABLE `inscripciones`
 ALTER TABLE `pagos`
   ADD CONSTRAINT `Pagos_fk0` FOREIGN KEY (`IdUsuario`) REFERENCES `usuario` (`IdUsuario`),
   ADD CONSTRAINT `fkPagoPlan` FOREIGN KEY (`IdPlan`) REFERENCES `plan` (`IdPlan`);
+
+--
+-- Filtros para la tabla `planrutina`
+--
+ALTER TABLE `planrutina`
+  ADD CONSTRAINT `fkrutinaejercicio` FOREIGN KEY (`idejercicio`) REFERENCES `ejercicio` (`idejercicio`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fkrutinausuario` FOREIGN KEY (`idusuario`) REFERENCES `usuario` (`IdUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `rol`
