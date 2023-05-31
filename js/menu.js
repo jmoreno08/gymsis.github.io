@@ -10,7 +10,5 @@
    closeMenu.addEventListener("click", () => {
      menu.classList.remove("nav_link--show");
    });
-
-
   
 })();
